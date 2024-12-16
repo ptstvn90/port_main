@@ -13,6 +13,10 @@
   --second-bg-color: #131313;
   --text-color: #ffffff;
   --main-color: #a7c957;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --light-gray: #bebebe;
+  --gold: #ffd700;
 }
 html {
   font-size: 60%;
@@ -351,6 +355,115 @@ span {
   background-color: var(--main-color);
   width: 50px;
 }
+
+.qualities {
+  background: var(--bg-color);
+  color: black;
+}
+.qualities h2 {
+  margin-bottom: 5rem;
+  color: var(--white-color);
+}
+.qualities-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+.quality-box {
+  background-color: var(--main-color);
+  height: 300px;
+  border-radius: 3rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.quality-box:hover {
+  background: var(--white-color);
+  color: var(--black-color);
+  border: 5px solid var(--main-color);
+  transform: scale(1.03s);
+}
+.quality-box .quality-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 200px;
+  justify-content: left;
+  align-items: baseline;
+  padding: 5rem 5rem;
+}
+.quality-info h4 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 2;
+}
+.quality-info p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-height: 100px;
+  line-height: 1.7;
+  margin: auto;
+}
+.testimonials {
+  background: var(--second-bg-color);
+}
+.testimonials-box {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonials .heading {
+  margin-bottom: 5rem;
+}
+.testimonials-box img {
+  width: 15rem;
+  border-radius: 10%;
+  border: 3px solid var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+}
+.testimonial-item {
+  min-height: 550px;
+  max-width: 450px;
+  background: var(--black-color);
+  border: 3px solid var(--light-gray);
+  border-radius: 2rem;
+  margin: 0 2rem;
+  padding: 30px 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  color: var(--white-color);
+  transition: 0.4s ease-in-out;
+}
+.testimonial-item:hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-10px)scale(1.03);
+  box-shadow: 0 0 50px var(--main-color);
+}
+.testimonial-item h2 {
+  font-size: 2.8rem;
+}
+.testimonial-item p {
+  font-size: 1.3rem;
+}
+#star {
+  color: var(--gold);
+  font-size: 2rem;
+}
+
+
 
 
 
